@@ -98,6 +98,12 @@ label{
     background-color: hsl(0, 0%, 8%);
     cursor: pointer;
 }
+.attribution{
+    text-align: center;
+}
+.attribution a{
+    text-decoration: none;
+}
 /******************************CSS BEFORE END *************************/
 
 /*******************Responsive design*****************/

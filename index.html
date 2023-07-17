@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+<Main class="main-container">
+<section class="Mainbox">
+<div class="box1">
+    <label class="labelday" for="input">Day</label>
+    <input class="day" id="input-day" type="text" placeholder="DD" maxlength="2">
+
+    <p class="invalid-day-error">Must be a valid day</p>
+    <p class="empty-field">This field is required</p>
+
+    <label class="months" for="input">Month</label>
+    <input class="month" type="text" placeholder="MM" maxlength="2">
+
+    <p class="invalid-month-error">Must be a valid month</p>
+    <p class="empty-field2">This field is required</p>
+
+    <label class="labelyear" for="input">Year</label>
+    <input class="year" type="text" placeholder="YYYY" maxlength="4">
+
+    <p class="invalid-year-error">must be in the past</p>
+    <p class="empty-field3">This field is required</p>
+</div>
+
+<div class="box2">
+  <h1> <span class="output-value years">--</span> years</h1>
+  <h1> <span class="output-value Month">--</span> months</h1> 
+  <h1> <span class="output-value days">--</span> days</h1>
+</div>
+
+<img src="assets\images\icon-arrow.svg" alt="" class="img">
+</section>
+
+</Main>
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ankit shrungares</a>.
+  </div>
+</footer>  
+
+<script src="newindex.js"></script>
+</body>
+</html>

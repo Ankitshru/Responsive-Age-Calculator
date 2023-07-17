@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container{
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+.Mainbox{
+    height: 75vh;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    border-bottom-right-radius: 140px;
+    background-color:hsl(0, 0%, 100%)
+}
+.box1{
+    height: 20vh;
+    width: 75%;
+    margin-left: 60px;
+    border-bottom: 2px solid hsl(0, 0%, 86%);
+    display: flex;
+    /*flex-direction: row;
+    justify-content: flex-start;*/
+    align-items: center;
+}
+.box2{
+    height: 40vh;
+    width: 80%;
+    position: relative;
+    left: 60px;
+    padding-bottom: 10px;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 5em;
+    line-height: 0.2;
+}
+
+.box1 input[type=text]{
+    width: 30%;
+    height: 30px;
+    position: relative;
+    left: -30px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 800;
+}
+.output-value{
+    color: hsl(259, 100%, 65%);
+}
+label{
+    position: relative;
+    top: -40px;
+    font-family: 'Poppins';
+    color:  hsl(0, 0%, 8%);
+    font-weight: 700;
+    font-size: 12px;
+}
+.months{
+    position: relative;
+    left: 15px;
+}
+
+.labelday{
+    position: relative;
+    left: -1px;
+}
+.labelyear{
+    position: relative;
+    left: -1px;
+}
+.img{
+    position: absolute;
+    top: 200px;
+    right: 430px;
+    height: 46px;
+    width: 45px;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 40px;
+    padding: 15px;
+}
+.img:hover{
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+/******************************CSS BEFORE END *************************/
+
+/*******************Responsive design*****************/
+@media screen  and (max-width:700px) {
+    .main-container{
+        min-width: 13em;
+        height: 99vh;
+    }
+    .Mainbox {
+        width: 92%;
+        margin: a;
+    }
+    .box1{
+        height: 34vh;
+        width: 85%;
+        margin: 25px;
+        justify-content: center;
+    }
+    .box1 input[type=text]  {
+        width: 20%;
+        height: 21px;
+        margin: -8px;
+        left: -15px;
+
+    }
+    #input-day {
+        margin-right: -22px;
+    }
+    .box2{
+        left: 27px;
+        top: 9px
+    }
+    h1{
+        font-size: 2.6em;
+    }
+    .img{
+        /*top: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);*/
+        top: 41%;
+        right: 42%;
+        /*transform: translate(-45%, -51%);*/
+        height: 25px;
+        width: 25px
+    }
+    footer{
+        display: none;
+    }
+    /***********Error message*************/
+    .invalid-day{
+        position: relative;
+        left: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/******************************CSS FOR JS START************************/
+
+/*******Input errors****/
+#errorDate {
+    border-color: hsl(0, 100%, 67%);
+}
+
+/********Input label errors********/
+#errorLabelYear{
+    color: hsl(0, 100%, 67%);
+}
+
+/*********Invalid text appear on error***/
+.invalid-day-error{
+    display: none;
+}
+.invalid-month-error{
+    display: none;
+}
+.invalid-year-error{
+    display: none;
+}
+
+.invalid-year{
+    position: absolute;
+    top: 195px;
+    right: 85vh;
+    font-size: 10px;
+    color :hsl(0, 100%, 67%);
+    display: block;
+}
+
+.invalid-month{
+    position: absolute;
+    top: 195px;
+    left: 87vh;
+    font-size: 10px;
+    color: hsl(0, 100%, 67%);
+    display: block;
+}
+.invalid-day{
+    position: absolute;
+    top: 195px;
+    left: 420px;
+    font-size: 10px;
+    color: hsl(0, 100%, 67%);
+    display: block;
+}
+.empty-field{
+    display: none;
+}
+.emptyfielderror{
+    position: absolute;
+    top: 195px;
+    left: 420px;
+    font-size: 10px;
+    color: hsl(0, 100%, 67%);
+    display: block;
+
+}
+.empty-field2{
+    display: none;
+}
+.emptyfieldmonth{
+    position: absolute;
+    top: 195px;
+    left: 87vh;
+    font-size: 10px;
+    color: hsl(0, 100%, 67%);
+    display: block;
+
+}
+.empty-field3{
+    display: none;
+}
+
+.emptyfieldyear{
+    position: absolute;
+    top: 195px;
+    right: 85vh;
+    font-size: 10px;
+    color :hsl(0, 100%, 67%);
+    display: block;
+}
+
